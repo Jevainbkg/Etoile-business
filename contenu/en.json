@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "accueil": {"titre": "Etoile Business — Money transfer & exchange in {ville}", "description": "Send and receive money with MoneyGram, Ria, M-Pesa or Airtel Money. Currency exchange, loan and subscription payments in our branches."},
+    "services": {"titre": "Services: transfers, exchange, payments | Etoile Business", "description": "Money transfers with MoneyGram, Ria, M-Pesa, Airtel Money, currency exchange, loan and subscription payments in {ville}. What to bring."},
+    "a_propos": {"titre": "About Etoile Business, money services in {ville}", "description": "Etoile Business is a money services provider in {ville}: transfers, currency exchange and payments, with simple and reliable service."},
+    "contact": {"titre": "Our locations & contact | Etoile Business {ville}", "description": "Address, opening hours and contact details of Etoile Business branches in {ville}. Message us on WhatsApp or call us."},
+    "mentions": {"titre": "Legal notice | Etoile Business", "description": "Legal notice of the Etoile Business website: publisher, host, intellectual property."},
+    "confidentialite": {"titre": "Privacy policy | Etoile Business", "description": "How Etoile Business uses the data sent through the contact form. No cookies or trackers."}
+  },
+  "pied_de_page": "Money services: transfers, currency exchange, loan and subscription payments.",
+  "accueil": {
+    "surtitre": "Money services in {ville}",
+    "titre": "Send and receive money, simply.",
+    "intro": "Money transfers, currency exchange, loan and subscription payments: Etoile Business welcomes you in branch and answers you on WhatsApp.",
+    "confiance": "Partner of {reseaux}.",
+    "services_titre": "Our services",
+    "voir_services": "See all services",
+    "reseaux_titre": "Networks you already know",
+    "reseaux_texte": "We work with the leading money transfer and mobile money networks.",
+    "etapes_titre": "In branch, in 3 steps",
+    "etapes": [
+      {"titre": "Bring your ID", "texte": "And, to collect money, the transfer reference given by the sender."},
+      {"titre": "Come to the counter", "texte": "An agent handles your transaction and tells you the fees before confirming."},
+      {"titre": "Leave with your receipt", "texte": "Keep it until the transaction is confirmed."}
+    ],
+    "agences_titre": "Come and see us",
+    "cta_titre": "A question before you come?",
+    "cta_texte": "Message us on WhatsApp: we will tell you which service to choose and what to bring."
+  },
+  "services": {
+    "titre": "Our services",
+    "intro": "All your money transactions at one counter. Choose a service to see how it works and what to bring.",
+    "liste": [
+      {"id": "transfer", "icone": "transfert", "nom": "Money transfer", "bientot": false,
+       "resume": "Send or receive money, in the DRC and abroad, through the network that suits you.",
+       "description": "Send money to your family or receive a transfer, in the DRC or abroad.",
+       "details": ["**Available networks:** {reseaux}.", "**To send:** your ID, the recipient's full name and country.", "**To receive:** your ID and the transfer reference given by the sender.", "Fees depend on the network, the amount and the country: ask us in branch or on WhatsApp."]},
+      {"id": "exchange", "icone": "change", "nom": "Currency exchange", "bientot": false,
+       "resume": "Exchange currencies at the counter, at the daily rate posted in our branch.",
+       "description": "Exchange currencies at the counter. The daily rate is posted in our branch.",
+       "details": ["**Accepted currencies:** [TO REPLACE: currencies]"]},
+      {"id": "loans", "icone": "credit", "nom": "Loan payments", "bientot": false,
+       "resume": "Pay your loan instalments without queuing at the bank.",
+       "description": "Pay your loan instalments with us, without going to the bank.",
+       "details": ["**Lenders covered:** [TO REPLACE: lenders]", "**What to bring:** your loan reference and the instalment amount."]},
+      {"id": "subscriptions", "icone": "abonnement", "nom": "Subscription payments", "bientot": false,
+       "resume": "Pay your subscriptions in the same place as your other transactions.",
+       "description": "Pay your subscriptions together with your other transactions.",
+       "details": ["**Accepted subscriptions:** [TO REPLACE: TV, internet, water, electricity…]"]},
+      {"id": "parcels", "icone": "colis", "nom": "Parcel shipping abroad", "bientot": true,
+       "resume": "A new service is on its way. Ask us to let you know.",
+       "description": "We are preparing a parcel shipping service to other countries. Message us to be told when it opens.",
+       "details": []}
+    ],
+    "taux_titre": "Today's rates",
+    "taux_note": "Indicative rates, confirmed at the counter.",
+    "faq_titre": "Frequently asked questions",
+    "faq": [
+      {"question": "What documents should I bring?", "reponse": "A valid ID, and to collect money, the transfer reference."},
+      {"question": "How much does a transfer cost?", "reponse": "Fees depend on the network, the amount and the destination country. Ask us for an exact amount on WhatsApp before you come."},
+      {"question": "How long does the money take to arrive?", "reponse": "It depends on the network. [TO REPLACE: actual times per network]"},
+      {"question": "Can I receive money on my phone?", "reponse": "Yes, through M-Pesa or Airtel Money."},
+      {"question": "What are your opening hours?", "reponse": "{horaires}"}
+    ],
+    "cta_titre": "Not sure about your transaction?",
+    "cta_texte": "Message us before you come: we reply during opening hours."
+  },
+  "a_propos": {
+    "titre": "Etoile Business, your local money services provider",
+    "intro": "We help individuals and traders in {ville} send, receive, exchange and pay their money. Our agents welcome you at the counter and answer you on WhatsApp.",
+    "histoire_titre": "Our story",
+    "histoire": "[TO REPLACE: founding year, founder, number of branches, if the client wishes to share them]",
+    "engagements_titre": "Our commitments",
+    "engagements": [
+      {"titre": "Security", "texte": "Every transaction is recorded and you get a receipt."},
+      {"titre": "Clarity", "texte": "We tell you the fees before the transaction."},
+      {"titre": "Close to you", "texte": "A team you can reach in branch and on WhatsApp."}
+    ],
+    "cadre_titre": "A reliable framework",
+    "cadre_texte": "Etoile Business works in partnership with recognised money transfer networks. [TO REPLACE: legal status, RCCM, Central Bank of Congo authorisation if applicable]",
+    "cta_titre": "Come and see us",
+    "cta_texte": "Our agents will welcome you and answer your questions."
+  },
+  "contact": {
+    "titre": "Our locations & contact",
+    "intro": "The quickest way: message us on WhatsApp. We reply during opening hours.",
+    "agences_titre": "Our branches",
+    "formulaire_titre": "Write to us",
+    "avertissement": "Etoile Business will never ask for your PIN or for a payment by message."
+  },
+  "mentions": {
+    "titre": "Legal notice",
+    "sections": [
+      {"titre": "Publisher", "texte": "Etoile Business — legal form: [TO REPLACE]\nRegistered office: [TO REPLACE]\nRCCM: [TO REPLACE] · Nat. ID: [TO REPLACE] · Tax no.: [TO REPLACE]\nPhone: {telephone} · Email: {email}"},
+      {"titre": "Publication director", "texte": "[TO REPLACE]"},
+      {"titre": "Hosting", "texte": "Vercel Inc. — vercel.com — [TO REPLACE: postal address, see vercel.com/legal]"},
+      {"titre": "Regulated activity", "texte": "[TO REPLACE: Central Bank of Congo authorisation, agent status with partner networks]"},
+      {"titre": "Intellectual property", "texte": "The texts, logo and graphic elements of this website belong to Etoile Business. Any reproduction without permission is prohibited. {reseaux} are trademarks of their respective owners and are mentioned to indicate the available services."},
+      {"titre": "Credits", "texte": "Fonts: Jost and Allura (SIL Open Font License)."}
+    ]
+  },
+  "confidentialite": {
+    "titre": "Privacy policy",
+    "sections": [
+      {"titre": "Data collected", "texte": "Only what you enter in the contact form: name, phone number and message."},
+      {"titre": "Purpose", "texte": "This data is only used to reply to your request. It is never sold or used for advertising."},
+      {"titre": "Retention period", "texte": "[TO REPLACE: period, e.g. 12 months after the last exchange]"},
+      {"titre": "Recipients", "texte": "Etoile Business and Web3Forms, the technical service that delivers the form by email."},
+      {"titre": "Cookies and trackers", "texte": "This website uses no analytics or advertising cookies, and no trackers."},
+      {"titre": "Your rights", "texte": "You can ask to access, correct or delete your data by writing to {email}."}
+    ]
+  }
+}

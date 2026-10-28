@@ -1,0 +1,237 @@
+{
+  "seo": {
+    "accueil": {
+      "titre": "Etoile Business — Transfert d'argent et change à {ville}",
+      "description": "Envoyez et recevez de l'argent avec MoneyGram, Ria, M-Pesa ou Airtel Money. Change, paiement de crédit et d'abonnements dans nos agences."
+    },
+    "services": {
+      "titre": "Services : transfert, change, paiements | Etoile Business",
+      "description": "Transfert de fonds MoneyGram, Ria, M-Pesa, Airtel Money, change, paiement de crédit et d'abonnements à {ville}. Ce qu'il faut apporter."
+    },
+    "a_propos": {
+      "titre": "À propos d'Etoile Business, messagerie financière à {ville}",
+      "description": "Etoile Business est une messagerie financière à {ville} : transfert de fonds, change et paiements, avec un accueil simple et sérieux."
+    },
+    "contact": {
+      "titre": "Nos agences et contact | Etoile Business {ville}",
+      "description": "Adresse, horaires et contacts des agences Etoile Business à {ville}. Écrivez-nous sur WhatsApp ou appelez-nous."
+    },
+    "mentions": {
+      "titre": "Mentions légales | Etoile Business",
+      "description": "Mentions légales du site Etoile Business : éditeur, hébergeur, propriété intellectuelle."
+    },
+    "confidentialite": {
+      "titre": "Politique de confidentialité | Etoile Business",
+      "description": "Comment Etoile Business utilise les données envoyées par le formulaire de contact. Aucun cookie ni traceur."
+    }
+  },
+  "pied_de_page": "Messagerie financière : transfert de fonds, change, paiement de crédit et d'abonnements.",
+  "accueil": {
+    "surtitre": "Messagerie financière à {ville}",
+    "titre": "Envoyez et recevez votre argent, simplement.",
+    "intro": "Transfert de fonds, change, paiement de crédit et d'abonnements : Etoile Business vous accueille en agence et vous répond sur WhatsApp.",
+    "confiance": "Partenaire des réseaux {reseaux}.",
+    "services_titre": "Nos services",
+    "voir_services": "Voir tous les services",
+    "reseaux_titre": "Des réseaux que vous connaissez",
+    "reseaux_texte": "Nous travaillons avec les principaux réseaux de transfert et de mobile money.",
+    "etapes_titre": "En agence, en 3 étapes",
+    "etapes": [
+      {
+        "titre": "Préparez votre pièce d'identité",
+        "texte": "Et, pour un retrait, la référence du transfert donnée par l'expéditeur."
+      },
+      {
+        "titre": "Passez au guichet",
+        "texte": "Un agent s'occupe de votre opération et vous indique les frais avant de valider."
+      },
+      {
+        "titre": "Repartez avec votre reçu",
+        "texte": "Gardez-le jusqu'à la confirmation de l'opération."
+      }
+    ],
+    "agences_titre": "Venez nous voir",
+    "cta_titre": "Une question avant de vous déplacer ?",
+    "cta_texte": "Écrivez-nous sur WhatsApp : nous vous disons quel service choisir et quoi apporter."
+  },
+  "services": {
+    "titre": "Nos services",
+    "intro": "Toutes vos opérations d'argent au même guichet. Choisissez un service pour savoir comment il fonctionne et quoi apporter.",
+    "liste": [
+      {
+        "id": "transfert",
+        "icone": "transfert",
+        "nom": "Transfert de fonds",
+        "bientot": false,
+        "resume": "Envoyez ou recevez de l'argent, en RDC et à l'international, via le réseau qui vous convient.",
+        "description": "Envoyez de l'argent à vos proches ou recevez un transfert, en RDC comme à l'étranger.",
+        "details": [
+          "**Réseaux disponibles :** {reseaux}.",
+          "**Pour envoyer :** votre pièce d'identité, le nom complet du bénéficiaire et son pays.",
+          "**Pour recevoir :** votre pièce d'identité et la référence du transfert donnée par l'expéditeur.",
+          "Les frais dépendent du réseau, du montant et du pays : demandez-les en agence ou sur WhatsApp."
+        ]
+      },
+      {
+        "id": "change",
+        "icone": "change",
+        "nom": "Change de devises",
+        "bientot": false,
+        "resume": "Changez vos devises au guichet, au taux du jour affiché en agence.",
+        "description": "Changez vos devises directement au guichet. Le taux du jour est affiché en agence.",
+        "details": [
+          "**Devises acceptées :** [À REMPLACER : devises]"
+        ]
+      },
+      {
+        "id": "credit",
+        "icone": "credit",
+        "nom": "Paiement de crédit",
+        "bientot": false,
+        "resume": "Réglez vos échéances de crédit sans faire la queue à la banque.",
+        "description": "Réglez vos échéances de crédit chez nous, sans vous déplacer à la banque.",
+        "details": [
+          "**Organismes concernés :** [À REMPLACER : organismes]",
+          "**À apporter :** votre référence de crédit et le montant de l'échéance."
+        ]
+      },
+      {
+        "id": "abonnements",
+        "icone": "abonnement",
+        "nom": "Paiement d'abonnements",
+        "bientot": false,
+        "resume": "Payez vos abonnements au même endroit que vos autres opérations.",
+        "description": "Payez vos abonnements en même temps que vos autres opérations.",
+        "details": [
+          "**Abonnements acceptés :** [À REMPLACER : TV, internet, eau, électricité…]"
+        ]
+      },
+      {
+        "id": "colis",
+        "icone": "colis",
+        "nom": "Envoi de colis à l'étranger",
+        "bientot": true,
+        "resume": "Un nouveau service arrive. Demandez-nous d'être prévenu.",
+        "description": "Nous préparons un service d'envoi de colis vers l'étranger. Écrivez-nous pour être prévenu de son ouverture.",
+        "details": []
+      }
+    ],
+    "taux_titre": "Taux du jour",
+    "taux_note": "Taux indicatifs, confirmés au guichet.",
+    "faq_titre": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Quels documents dois-je apporter ?",
+        "reponse": "Une pièce d'identité valide, et pour un retrait la référence du transfert."
+      },
+      {
+        "question": "Combien coûte un transfert ?",
+        "reponse": "Les frais dépendent du réseau, du montant et du pays de destination. Demandez-nous un montant exact sur WhatsApp avant de venir."
+      },
+      {
+        "question": "En combien de temps l'argent arrive-t-il ?",
+        "reponse": "Cela dépend du réseau choisi. [À REMPLACER : délais réels par réseau]"
+      },
+      {
+        "question": "Puis-je recevoir de l'argent sur mon téléphone ?",
+        "reponse": "Oui, via M-Pesa ou Airtel Money."
+      },
+      {
+        "question": "Quels sont vos horaires ?",
+        "reponse": "{horaires}"
+      }
+    ],
+    "cta_titre": "Un doute sur votre opération ?",
+    "cta_texte": "Écrivez-nous avant de vous déplacer : nous vous répondons pendant les heures d'ouverture."
+  },
+  "a_propos": {
+    "titre": "Etoile Business, votre messagerie financière de proximité",
+    "intro": "Nous aidons les particuliers et les commerçants de {ville} à envoyer, recevoir, changer et payer leur argent. Nos agents vous accueillent au guichet et vous répondent sur WhatsApp.",
+    "histoire_titre": "Notre histoire",
+    "histoire": "[À REMPLACER : année de création, fondateur, nombre d'agences, si le client souhaite les donner]",
+    "engagements_titre": "Nos engagements",
+    "engagements": [
+      {
+        "titre": "Sécurité",
+        "texte": "Chaque opération est enregistrée et vous recevez un reçu."
+      },
+      {
+        "titre": "Clarté",
+        "texte": "Nous vous donnons les frais avant l'opération."
+      },
+      {
+        "titre": "Proximité",
+        "texte": "Une équipe joignable en agence et sur WhatsApp."
+      }
+    ],
+    "cadre_titre": "Un cadre sérieux",
+    "cadre_texte": "Etoile Business opère en partenariat avec des réseaux de transfert reconnus. [À REMPLACER : statut juridique, RCCM, agrément de la Banque centrale du Congo si applicable]",
+    "cta_titre": "Passez nous voir",
+    "cta_texte": "Nos agents vous accueillent et répondent à vos questions."
+  },
+  "contact": {
+    "titre": "Nos agences et contact",
+    "intro": "Le plus rapide : écrivez-nous sur WhatsApp. Nous répondons pendant les heures d'ouverture.",
+    "agences_titre": "Nos agences",
+    "formulaire_titre": "Nous écrire",
+    "avertissement": "Etoile Business ne vous demandera jamais votre code secret ou un paiement par message."
+  },
+  "mentions": {
+    "titre": "Mentions légales",
+    "sections": [
+      {
+        "titre": "Éditeur du site",
+        "texte": "Etoile Business — forme juridique : [À REMPLACER]\nSiège : [À REMPLACER]\nRCCM : [À REMPLACER] · Id. nat. : [À REMPLACER] · N° impôt : [À REMPLACER]\nTéléphone : {telephone} · E-mail : {email}"
+      },
+      {
+        "titre": "Directeur de la publication",
+        "texte": "[À REMPLACER]"
+      },
+      {
+        "titre": "Hébergement",
+        "texte": "Vercel Inc. — vercel.com — [À REMPLACER : adresse postale, voir vercel.com/legal]"
+      },
+      {
+        "titre": "Activité réglementée",
+        "texte": "[À REMPLACER : agrément ou autorisation de la Banque centrale du Congo, statut d'agent des réseaux partenaires]"
+      },
+      {
+        "titre": "Propriété intellectuelle",
+        "texte": "Les textes, le logo et les éléments graphiques de ce site appartiennent à Etoile Business. Toute reproduction sans autorisation est interdite. Les noms {reseaux} sont des marques de leurs propriétaires respectifs et sont cités pour indiquer les services disponibles."
+      },
+      {
+        "titre": "Crédits",
+        "texte": "Polices : Jost et Allura (licence SIL Open Font License)."
+      }
+    ]
+  },
+  "confidentialite": {
+    "titre": "Politique de confidentialité",
+    "sections": [
+      {
+        "titre": "Données collectées",
+        "texte": "Uniquement celles que vous saisissez dans le formulaire de contact : nom, numéro de téléphone et message."
+      },
+      {
+        "titre": "Finalité",
+        "texte": "Ces données servent seulement à répondre à votre demande. Elles ne sont ni vendues ni utilisées pour de la publicité."
+      },
+      {
+        "titre": "Durée de conservation",
+        "texte": "[À REMPLACER : durée, par exemple 12 mois après le dernier échange]"
+      },
+      {
+        "titre": "Destinataires",
+        "texte": "Etoile Business et Web3Forms, le service technique qui transmet le formulaire par e-mail."
+      },
+      {
+        "titre": "Cookies et traceurs",
+        "texte": "Ce site n'utilise aucun cookie de mesure d'audience ni de publicité, et aucun traceur."
+      },
+      {
+        "titre": "Vos droits",
+        "texte": "Vous pouvez demander à consulter, corriger ou supprimer vos données en écrivant à {email}."
+      }
+    ]
+  }
+}
