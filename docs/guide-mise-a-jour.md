@@ -1,51 +1,42 @@
 # Guide de mise à jour — site Etoile Business
 
-Le site est fait de fichiers HTML simples : il s'ouvre dans un navigateur et se met en ligne par simple copie. Aucun abonnement ni logiciel n'est nécessaire.
+Tout le contenu du site se modifie dans un **espace admin en ligne** (Pages CMS), sans toucher au code. Chaque enregistrement met le site à jour en environ une minute.
 
-## Structure
-```
-site/
-├── index.html, services.html, a-propos.html, contact.html   ← pages françaises
-├── mentions-legales.html, confidentialite.html, 404.html
-├── en/            ← pages anglaises (mêmes pages)
-├── css/tokens.css ← couleurs, polices, tailles (seul fichier à toucher pour le style)
-├── css/base.css, css/components.css
-├── js/main.js     ← menu mobile, formulaire
-├── img/           ← logo, étoile, image de partage
-├── fonts/         ← police Jost
-├── vercel.json    ← réglages Vercel : en-têtes de sécurité, cache, blocage Google provisoire
-├── sitemap.xml, robots.txt
-_source/
-├── donnees.json   ← coordonnées du client
-└── build.py       ← régénère toutes les pages à partir de donnees.json
-```
+## Se connecter à l'admin
+1. Aller sur **app.pagescms.org**.
+2. Se connecter avec **GitHub** (propriétaire du dépôt), ou avec le lien reçu par e-mail si vous avez été invité comme collaborateur (pas besoin de compte GitHub).
+3. Choisir le dépôt **Etoile-business**, branche **main**.
 
-## Changer les coordonnées (téléphone, WhatsApp, adresse, horaires, ville, domaine)
-**Méthode conseillée** (Python 3 installé) :
-1. Ouvrir `_source/donnees.json` et remplacer chaque `[À REMPLACER …]`.
-   - `telephone_affiche` : tel qu'il s'affiche, ex. `+243 81 234 5678`
-   - `telephone_lien` : sans espaces, ex. `+243812345678`
-   - `whatsapp_lien` : chiffres seuls avec l'indicatif, ex. `243812345678`
-   - `agences` : une ligne par agence (nom, adresse, lien d'itinéraire)
-2. Lancer `python3 build.py` dans le dossier `_source/`. Les 13 pages, le sitemap et le robots.txt sont régénérés.
-3. Les textes des pages (services, FAQ, mentions légales…) se trouvent aussi dans `build.py`, en clair, en français puis en anglais.
+## Ce que l'on peut modifier
+| Menu de l'admin | Contenu |
+|---|---|
+| **Coordonnées, agences et taux** | Ville, téléphone, WhatsApp, e-mail, horaires, agences (nom, adresse, itinéraire, photo), réseaux partenaires, bandeau d'annonce, tableau des taux du jour, clé du formulaire, ouverture à Google |
+| **Textes du site (français)** | Tous les titres et textes des pages, services, FAQ, engagements, mentions légales, confidentialité, titres et descriptions Google |
+| **Textes du site (anglais)** | Les mêmes, pour la version anglaise |
 
-**Sans Python** : ouvrir chaque fichier HTML (FR et EN) dans un éditeur de texte et utiliser « Rechercher / Remplacer » sur `[À REMPLACER` et `[TO REPLACE`. Attention : une page régénérée ensuite avec `build.py` écrasera ces modifications.
+Penser à modifier **les deux langues** quand un texte change.
 
-## Changer une couleur ou une police
-Uniquement dans `css/tokens.css`. Garder un contraste suffisant (vérifier sur webaim.org/resources/contrastchecker, minimum 4,5:1 pour le texte).
+## Écrire dans les champs
+- `**mot**` met le mot en **gras** ; un retour à la ligne est conservé.
+- Variables remplacées automatiquement partout : `{ville}`, `{telephone}`, `{email}`, `{horaires}`, `{reseaux}`.
+- Un texte `[À REMPLACER …]` est surligné en jaune sur le site : c'est un rappel qu'une information manque.
 
-## Formulaire de contact
-Le formulaire passe par Web3Forms (gratuit). La clé d'accès se met dans `web3forms_cle` de `donnees.json`. Pour changer l'adresse qui reçoit les messages, aller sur web3forms.com et créer une nouvelle clé avec la nouvelle adresse.
-Une version PHP (hébergement cPanel) est gardée dans `_source/alternative-php/`.
+## Cas fréquents
+- **Annoncer une fermeture** : *Coordonnées* → **Bandeau d'annonce** (FR et EN). Vider le champ pour retirer le bandeau.
+- **Publier les taux du jour** : *Coordonnées* → **Taux du jour** → cocher **Afficher**, mettre la date et les lignes. Le tableau apparaît sur l'accueil et la page Services. Décocher pour le masquer.
+- **Ajouter une agence** : *Coordonnées* → **Agences** → **Ajouter**. Photo facultative, en JPG ou WebP de moins de 300 Ko (sinon le site ralentit sur mobile).
+- **Ouvrir un nouveau service** : *Textes* → **Page Services** → **Services**. Décocher « Pas encore disponible » pour retirer le badge « Bientôt ».
+- **Ouvrir le site à Google** : quand plus rien n'est `[À REMPLACER]`, cocher **Ouvrir le site à Google**, puis soumettre `sitemap.xml` dans Google Search Console.
 
-## Mettre en ligne une modification
-Le site est hébergé sur Vercel et relié au dépôt GitHub : toute modification fusionnée dans la branche `main` est mise en ligne automatiquement en une minute. En cas de problème, Vercel → Deployments → choisir la version précédente → **Promote to Production**.
-
-## Ouvrir le site à Google
-Tant que les coordonnées sont provisoires, `vercel.json` contient `X-Robots-Tag: noindex`. Quand tout est rempli, supprimer ce bloc puis soumettre `sitemap.xml` dans Google Search Console.
+## Si quelque chose ne va pas
+- Le site ne change pas après un enregistrement : sur vercel.com → projet → **Deployments**, ouvrir le dernier déploiement et lire le journal. Une erreur de contenu y est expliquée ; tant qu'elle n'est pas corrigée, l'ancienne version reste en ligne.
+- Revenir en arrière : Vercel → **Deployments** → version précédente → **Promote to Production**. L'historique de chaque modification est aussi visible sur GitHub.
 
 ## Ce qu'il ne faut pas faire
 - Afficher les logos MoneyGram, Ria, etc. sans l'accord écrit du réseau.
 - Ajouter de faux avis ou des chiffres non vérifiés.
 - Ajouter Google Analytics ou un pixel publicitaire sans bandeau de consentement.
+- Modifier les fichiers `site/*.html` directement : ils sont régénérés à chaque déploiement.
+
+## Pour un développeur
+Contenu : `contenu/*.json` · génération : `python3 _source/build.py` · styles : `site/css/tokens.css` (couleurs, polices), `base.css`, `components.css` · admin : `.pages.yml`.

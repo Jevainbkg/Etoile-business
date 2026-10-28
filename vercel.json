@@ -1,12 +1,12 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "cleanUrls": false,
+  "buildCommand": "python3 _source/build.py",
+  "outputDirectory": "site",
+  "installCommand": "",
+  "framework": null,
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" },
         { "key": "Strict-Transport-Security", "value": "max-age=31536000" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
@@ -16,7 +16,7 @@
     },
     {
       "source": "/(css|js|img)/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
     },
     {
       "source": "/fonts/(.*)",

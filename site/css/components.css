@@ -155,3 +155,17 @@ textarea.form__input { min-height: 8rem; resize: vertical; }
 .reveal { opacity: 0; transform: translateY(12px); transition: opacity 500ms ease, transform 500ms ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+
+/* Bandeau d'annonce (réglé dans l'admin) */
+.announce { background: var(--color-accent); color: var(--color-inverse-bg); font-size: var(--fs-sm); padding-block: var(--space-2); }
+.announce .container { max-width: var(--container); }
+
+/* Photo d'agence (facultative) */
+.agency__photo { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: var(--space-3); background: var(--color-border); }
+
+/* Taux du jour (facultatif) */
+.table-wrap { overflow-x: auto; }
+.rates { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.rates th, .rates td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border); }
+.rates thead th { font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: var(--tracking-caps); color: var(--color-text-muted); font-weight: var(--fw-medium); }
+.rates td { font-size: var(--fs-md); font-weight: var(--fw-medium); }

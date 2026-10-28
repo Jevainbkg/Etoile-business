@@ -23,10 +23,11 @@
 | D12 · renommage de dépôt | Ne s'applique pas pour l'instant |
 
 ## Cible (décidée le 2026-10-28)
-- Hébergement : **Vercel** (gratuit), production = branche `main` (D19), racine du projet Vercel = dossier `site/`, préréglage « Other », pas de build (D17).
+- Hébergement : **Vercel** (gratuit), production = branche `main` (D19), racine du projet Vercel = racine du dépôt, préréglage « Other » ; `vercel.json` : build `python3 _source/build.py`, sortie `site`.
+- Admin : **Pages CMS** (app.pagescms.org), édite `contenu/*.json` ; chaque enregistrement = commit sur `main` = redéploiement. Collaborateurs invités par e-mail sans compte GitHub.
 - Formulaire : **Web3Forms** (clé d'accès publique dans le HTML, destinée à l'être). Validation client (JS) + filtrage anti-spam Web3Forms + honeypot `botcheck`. Limite : pas de validation serveur des champs comme avec `envoyer.php` ; accepté pour un site vitrine.
-- Config : `site/vercel.json` (en-têtes de sécurité, cache, `X-Robots-Tag: noindex` provisoire). `envoyer.php` et `.htaccess` déplacés dans `_source/alternative-php/`.
-- Dépôt : `etoile-business` (à créer par l'utilisateur).
+- Config : `vercel.json` à la racine (build, en-têtes de sécurité, cache). Indexation pilotée par le champ « Ouvrir le site à Google » (balise meta robots). `envoyer.php` et `.htaccess` déplacés dans `_source/alternative-php/`.
+- Dépôt : `jevainbkg/etoile-business` (privé).
 
 ## Plan
 1. Choix de l'hébergement et préparation des fichiers de config.
@@ -41,7 +42,8 @@
 |---|---|---|
 | 2026-10-28 | Inventaire + leçons | Fait (CODE) |
 | 2026-10-28 | Étape 1 : choix Vercel + Web3Forms | Fait. Formulaire adapté, testé avec réponse simulée (CODE) : clé provisoire → message d'erreur ; clé renseignée → succès, champs `nom telephone message access_key subject from_name botcheck` envoyés |
-| 2026-10-28 | Étape 2 : dépôt GitHub | En attente de l'utilisateur |
+| 2026-10-28 | Étape 2 : dépôt GitHub | Dépôt `jevainbkg/etoile-business` créé (vide) par l'utilisateur. Premier envoi sur `claude/project-thread-801tga` (commit 8b87ed2, VU : `git ls-remote`). Puis `main` créée à la demande de l'utilisateur (VU : `refs/heads/main` = 8b87ed2). Reste : `main` comme branche par défaut |
+| 2026-10-28 | Espace admin | Choix Pages CMS. Contenu FR/EN déplacé dans `contenu/`, `build.py` rendu tolérant aux champs vides (CODE, testé) ; ajouts : bandeau d'annonce, photo d'agence, taux du jour (testés à 375 / 1440 px). Écart de texte avec la version précédente : 4 lignes (CODE, diff). PR vers `main` |
 
 ## Retour arrière
 Archive `livraison/etoile-business-site.zip` ; sur Vercel / Cloudflare, « Promote » / « Rollback » vers le déploiement précédent.
