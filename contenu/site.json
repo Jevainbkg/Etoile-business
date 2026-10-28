@@ -1,27 +1,27 @@
 {
   "indexer": false,
   "domaine": "https://www.exemple.com",
-  "ville": "[À REMPLACER : ville]",
+  "ville": "Kinshasa",
   "pays_code": "CD",
-  "telephone_affiche": "[À REMPLACER : téléphone]",
-  "telephone_lien": "+243000000000",
-  "whatsapp": "243000000000",
+  "telephone_affiche": "+243 802 726 564",
+  "telephone_lien": "+243 802 726 564",
+  "whatsapp": "+243 802 726 564",
   "email": "[À REMPLACER : e-mail]",
   "email_lien": "contact@exemple.com",
-  "horaires_fr": "[À REMPLACER : horaires]",
-  "horaires_en": "[TO REPLACE: opening hours]",
+  "horaires_fr": "8h",
+  "horaires_en": "17h",
   "annonce_fr": "",
   "annonce_en": "",
   "web3forms_cle": "[À REMPLACER : clé d'accès Web3Forms]",
   "agences": [
     {
-      "nom": "[À REMPLACER : nom de l'agence]",
-      "adresse": "[À REMPLACER : adresse, commune]",
+      "nom": "Etoile business",
+      "adresse": "[Col EBEYA, Kinshasa/Gombe]",
       "itineraire": "https://www.openstreetmap.org/",
       "photo": ""
     }
   ],
-  "reseaux": ["MoneyGram", "Ria", "Equity", "M-Pesa", "Airtel Money"],
+  "reseaux": ["MoneyGram", "Equity", "M-Pesa", "Airtel Money"],
   "taux": {
     "afficher": false,
     "date": "",
