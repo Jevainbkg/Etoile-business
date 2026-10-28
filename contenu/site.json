@@ -16,7 +16,13 @@
   "agences": [
     {
       "nom": "Etoile business",
-      "adresse": "[Col EBEYA, Kinshasa/Gombe]",
+      "adresse": "Col EBEYA, Kinshasa/Gombe",
+      "itineraire": "https://www.openstreetmap.org/",
+      "photo": ""
+    },
+    {
+      "nom": "Etoile business",
+      "adresse": "129,Av Baraka C/Kinshasa",
       "itineraire": "https://www.openstreetmap.org/",
       "photo": ""
     }
