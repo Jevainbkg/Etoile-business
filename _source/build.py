@@ -169,7 +169,7 @@ def header(lang, key):
   <a class="skip-link" href="#contenu">{u['skip']}</a>
 {banner(lang)}  <header class="header">
     <div class="container header__inner">
-      <a class="header__logo" href="{href(lang,'accueil')}" aria-label="{u['home_aria']}"><img src="{p}img/logo.svg" alt="" width="132" height="51"></a>
+      <a class="header__logo" href="{href(lang,'accueil')}" aria-label="{u['home_aria']}"><picture><source srcset="{p}img/logo-blanc.svg" media="(prefers-color-scheme: dark)"><img src="{p}img/logo.svg" alt="" width="132" height="51"></picture></a>
       <div class="header__tools">
         <nav class="nav" aria-label="{u['navlabel']}">
           <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-list">{u['menu']}</button>
