@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.exemple.com/</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/"/>
+  </url>
+  <url><loc>https://www.exemple.com/en/</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/"/>
+  </url>
+  <url><loc>https://www.exemple.com/services.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/services.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/en/services.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/services.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/a-propos.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/about.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/en/about.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/about.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/contact.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/contact.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/en/contact.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/contact.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/mentions-legales.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/legal-notice.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/en/legal-notice.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/legal-notice.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/confidentialite.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/privacy.html"/>
+  </url>
+  <url><loc>https://www.exemple.com/en/privacy.html</loc><lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.exemple.com/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.exemple.com/en/privacy.html"/>
+  </url>
+</urlset>

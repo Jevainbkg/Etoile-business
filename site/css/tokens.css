@@ -1,0 +1,106 @@
+/* ==========================================================
+   TOKENS — Etoile Business. Seule source des valeurs de design.
+   Palette : papier, encre, or (étoile). Contrastes vérifiés WCAG AA.
+   ========================================================== */
+@font-face { font-family: "Jost"; src: url("../fonts/jost-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("../fonts/jost-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("../fonts/jost-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+
+:root {
+  /* Couleurs */
+  --color-bg: #f7f4ee;             /* papier */
+  --color-surface: #ffffff;
+  --color-text: #14130f;           /* encre — 16.9:1 sur papier */
+  --color-text-muted: #5a564d;     /* 6.7:1 sur papier */
+  --color-primary: #14130f;        /* CTA = encre, comme le logo */
+  --color-primary-hover: #2e2b24;
+  --color-on-primary: #f7f4ee;
+  --color-accent: #c9a24a;         /* or — décor et texte sur fond encre uniquement (7.8:1) */
+  --color-accent-text: #7a5a12;    /* or foncé — texte sur fond clair (5.8:1) */
+  --color-border: #e4dccb;         /* filets décoratifs */
+  --color-border-strong: #8c8577;  /* bords de champs (3.3:1) */
+  --color-focus: #7a5a12;
+  --color-error: #b3261e;
+
+  /* Bandeaux sombres (hero, CTA final, pied de page) */
+  --color-inverse-bg: #14130f;
+  --color-inverse-text: #f7f4ee;
+  --color-inverse-muted: #a9a396;  /* 7.4:1 sur encre */
+  --color-inverse-focus: #c9a24a;
+
+  /* Typographie : une seule famille, géométrique comme le logo */
+  --font-heading: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
+  --font-body: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fs-sm: 0.875rem;
+  --fs-base: 1.0625rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 1.5625rem;
+  --fs-xl: clamp(1.75rem, 1.3rem + 2vw, 2.45rem);
+  --fs-2xl: clamp(2.3rem, 1.5rem + 4vw, 4rem);
+  --lh-tight: 1.1;
+  --lh-base: 1.6;
+  --tracking-caps: 0.12em;         /* surtitres en capitales, écho du logo */
+
+  /* Espacements (grille de 8) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4.5rem;
+  --space-8: 6rem;
+
+  /* Mise en page */
+  --container: 72rem;
+  --gutter: 1rem;
+
+  /* Formes : angles nets et filets fins, comme le cadre du logo */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --border-frame: 2px solid currentColor;
+  --shadow-sm: none;
+  --shadow-md: 0 12px 32px rgb(20 19 15 / 0.10);
+
+  /* Mouvement */
+  --transition: 180ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #14130f;
+    --color-surface: #1e1c17;
+    --color-text: #f7f4ee;
+    --color-text-muted: #a9a396;
+    --color-primary: #c9a24a;
+    --color-primary-hover: #dbb862;
+    --color-on-primary: #14130f;
+    --color-accent-text: #c9a24a;
+    --color-border: #34302b;
+    --color-border-strong: #7d776b;
+    --color-focus: #c9a24a;
+    --color-inverse-bg: #0b0a08;
+  }
+}
+:root[data-theme="dark"] {
+  --color-bg: #14130f;
+  --color-surface: #1e1c17;
+  --color-text: #f7f4ee;
+  --color-text-muted: #a9a396;
+  --color-primary: #c9a24a;
+  --color-primary-hover: #dbb862;
+  --color-on-primary: #14130f;
+  --color-accent-text: #c9a24a;
+  --color-border: #34302b;
+  --color-border-strong: #7d776b;
+  --color-focus: #c9a24a;
+  --color-inverse-bg: #0b0a08;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 2rem; }
+}
