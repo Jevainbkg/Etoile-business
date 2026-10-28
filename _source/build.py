@@ -2,7 +2,7 @@
 """Génère les pages HTML statiques d'Etoile Business (FR + EN) dans site/.
 
 Le contenu vient de contenu/site.json, contenu/fr.json et contenu/en.json,
-modifiables dans l'espace admin (Pages CMS). Vercel lance ce script à chaque
+modifiables directement sur GitHub. Vercel lance ce script à chaque
 déploiement ; on peut aussi le lancer à la main : python3 _source/build.py
 Dans les textes : **gras**, retour à la ligne, et les variables {ville},
 {telephone}, {email}, {horaires}, {reseaux}."""
@@ -11,7 +11,7 @@ import json, html, os, re, sys, datetime
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 OUT = os.path.join(ROOT, "site")
 class Data(dict):
-    """Un champ vidé ou supprimé dans l'admin vaut "" au lieu de faire échouer la génération."""
+    """Un champ vidé ou supprimé dans contenu/ vaut "" au lieu de faire échouer la génération."""
     def __missing__(self, key):
         return ""
 
@@ -76,7 +76,7 @@ PAGES = {  # clé : (fichier FR, fichier EN, clé de contenu)
  "confidentialite": ("confidentialite.html", "en/privacy.html"),
 }
 NAV = ["accueil", "services", "a_propos", "contact"]
-# Libellés d'interface (fixes, non éditables dans l'admin)
+# Libellés d'interface (fixes, non éditables dans contenu/)
 UI = {
  "fr": {"locale": "fr_FR", "skip": "Aller au contenu", "menu": "Menu", "navlabel": "Navigation principale",
         "nav": {"accueil": "Accueil", "services": "Services", "a_propos": "À propos", "contact": "Agences & contact", "mentions": "Mentions légales", "confidentialite": "Confidentialité"},

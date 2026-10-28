@@ -156,7 +156,7 @@ textarea.form__input { min-height: 8rem; resize: vertical; }
 .reveal.is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
 
-/* Bandeau d'annonce (réglé dans l'admin) */
+/* Bandeau d'annonce (réglé dans contenu/site.json) */
 .announce { background: var(--color-accent); color: var(--color-inverse-bg); font-size: var(--fs-sm); padding-block: var(--space-2); }
 .announce .container { max-width: var(--container); }
 
